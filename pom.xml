@@ -3,39 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.unfbx</groupId>
+    <groupId>com.paradm</groupId>
     <artifactId>chatgpt-java</artifactId>
     <version>1.1.5</version>
     <name>chatgpt-java</name>
     <description>OpenAI Java SDK, OpenAI Api for Java. ChatGPT Java SDK .</description>
-    <url>https://chatgpt-java.unfbx.com</url>
-    <scm>
-        <connection>scm:git:git://github.com/Grt1228/chatgpt-java.git</connection>
-        <url>https://github.com/Grt1228/chatgpt-java</url>
-    </scm>
-    <organization>
-        <name>grt1228</name>
-        <url>https://www.unfbx.com</url>
-    </organization>
-    <developers>
-        <developer>
-            <name>unfbx</name>
-            <email>rtguo1228@qq.com</email>
-            <organization>unfbx</organization>
-            <organizationUrl>https://www.unfbx.com</organizationUrl>
-            <roles>
-                <role>Developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-    </developers>
-    <licenses>
-        <license>
-            <name>The MIT License</name>
-            <url>https://projectlombok.org/LICENSE</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
 
     <properties>
         <java.version>1.8</java.version>
@@ -120,18 +92,6 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>unfbx</id> <!-- 此处id与setting.xml中的服务id保持一致 -->
-            <name>oss Snapshots Repository</name>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>unfbx</id> <!-- 此处id与setting.xml中的服务id保持一致 -->
-            <name>oss Staging Repository</name>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
     <profiles>
         <profile>
             <id>gen-src</id>

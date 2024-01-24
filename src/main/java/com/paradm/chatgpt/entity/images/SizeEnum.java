@@ -1,0 +1,25 @@
+package com.paradm.chatgpt.entity.images;
+
+import java.io.Serializable;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+/**
+ * 描述：生成图片尺寸大小
+ *
+ * @author https:www.unfbx.com
+ * 2023-02-15
+ */
+@Getter
+@AllArgsConstructor
+public enum SizeEnum implements Serializable {
+    size_1024_1792("1024x1792"),
+    size_1792_1024("1792x1024"),
+    size_1024("1024x1024"),
+    size_512("512x512"),
+    size_256("256x256"),
+
+    ;
+    private final String name;
+
+}
